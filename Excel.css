@@ -1,0 +1,81 @@
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+
+body {
+background: #ffffff;
+font-family: "Archivo", sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+}
+
+
+/* -------------------------------------------------- */
+/* LAYOUT */
+/* -------------------------------------------------- */
+.content {
+text-align: center;
+max-width: 900px;
+padding: 60px 24px;
+}
+
+
+/* -------------------------------------------------- */
+/* TYPOGRAPHY */
+/* -------------------------------------------------- */
+.headline-top {
+font-size: 28px;
+font-weight: 700;
+padding-top: 50%;
+color: #4c4c4c;
+margin-bottom: 10px;
+}
+
+
+.headline-main {
+font-size: 42px;
+font-weight: 800;
+background: #ffffff;
+color: #4c4c4c;
+display: inline-block;
+padding: 12px 20px;
+padding-top: 2%;
+border-radius: 4px;
+line-height: 1.1;
+}
+
+
+.subtext {
+margin-top: 14px;
+font-size: 14px;
+color: #4c4c4c;
+}
+
+
+/* -------------------------------------------------- */
+/* BUTTONS */
+/* -------------------------------------------------- */
+.btn {
+margin-top: 18px;
+background: #27ae60;
+border: none;
+padding: 8px 20px;
+border-radius: 20px;
+color: white;
+cursor: pointer;
+font-size: 14px;
+}
+
+
+/* -------------------------------------------------- */
+/* RESPONSIVE */
+/* -------------------------------------------------- */
+@media (max-width: 600px) {
+.headline-main { font-size: 28px; }
+.headline-top { font-size: 18px; }
+}

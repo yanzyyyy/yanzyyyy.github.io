@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Mockup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="studentmain.css">
+</head>
+<body>
+
+<div class="header">
+    <a href="#homepage" class="logo">
+      <img src="atrac white.png" alt="ATRAC Logo" class="logo-img" />
+    </a>
+
+    <div class="top-center">
+        <div class="date">November 30, 2025</div>
+          <div class="time">9:19 AM</div>
+          <div class="schedule">Nothing on your schedule today</div>
+    </div>
+
+    <div class="right-links">
+        <a href="ProfilePage.html">My Profile</a>
+        <a href="AttendanceTracker.html">Log-Out</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="left-panel">
+
+        <h2>Upcoming Classes</h2>
+
+        <h4>Today</h4>
+        <p class="no-class">No Classes today...</p>
+
+        <h4>Tomorrow</h4>
+
+        <div class="class-row">
+            <div class="class-block">
+                <h1>ITE212</h1>
+                <small>Room: E404</small><br>
+                <small>7:30 AM - 8:30 AM</small>
+            </div>
+
+            <div class="class-block">
+                <h1>ITE212L</h1>
+                <small>Room: E404</small><br>
+                <small>8:30 AM - 10:30 AM</small>
+            </div>
+        </div>
+    
+
+        <h2>Your classes</h2>
+
+        <div class="classes">
+            <div class="pill">ITE212<br><small>Mr. Krabz</small></div>
+            <div class="pill">ITE212L<br><small>Mr. Krabz</small></div>
+            <div class="pill">ITE210<br><small>Sandy</small></div>
+            <div class="pill join"><span>+</span><a href="JoinClass.html">Join a class</a></div>
+
+        </div>
+    </div>
+    <div class="right-panel">
+        <h1>Welcome,<br><strong id="studentNameDisplay">Juan Dela Cruz</strong></h1>
+
+        <div class="row">
+            <div class="button-box">
+                <h2><a href="StudentAttendance.html">View</h2>
+                <small>my attendance records</small>
+            </div>
+
+            <div class="button-box">
+                <h2><a href="Appeal.html">Appeal</a></h2>
+                <small>an absence record</small>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="button-box long">
+                <h2><a href="WriteLetter.html">Write</a></h2>
+                <small>an excuse letter</small>
+            </div>
+            <div class="button-box">
+                <h2><a href="ViewClasses.html">View</a></h2>
+                <small>my classes</small>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+function loadStudentName() {
+    const name = localStorage.getItem("atracName");
+
+    if (name) {
+        document.getElementById("studentNameDisplay").textContent = name;
+    }
+}
+
+window.onload = loadStudentName;
+</script>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+:root {
+    --bgCol: #41C327;
+    --titleCol: #4C4C4C;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
+}
+
+body {
+  display: grid;
+  grid: 1fr 10px 0.7fr 5fr / auto;
+  gap: 5px;
+  padding: 10px 20px;
+  
+  /*width: 1024px;*/
+ 
+}
+
+#backBtn {
+    color: var(--bgCol);
+    margin-left: 105px;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h1.name {
+  font-size: 48px;
+  color: var(--titleCol);
+  position: relative;
+  top: 20px;
+  margin-left: 100px; /* white top adjustment */
+}
+
+
+/* HEADER NI YANSON*/
+.top-bar {
+    background: var(--bgCol);
+    color: #ffffff;
+    padding: 30px 40px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.6%;
+    height: 75px;
+    }
+
+.logo {
+    width: 130px;
+    height: 30px;
+    border-radius: 30%;
+}
+.logo span {
+    width: 130px;
+    height: 30px;
+    border-radius: 30%;
+}
+.top-center {
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 0.5%;
+    flex-grow: 1;
+    margin-left: 80px;
+    font-weight: bold;
+    margin-top: -2%;
+    margin-bottom: -1%;
+    font-size: 15px;
+}
+
+.top-links a {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* END */
+
+/*  */ 
+main {
+  display: grid;
+  grid-template-rows: 40px 1fr; 
+  gap: 10px;
+  margin-top: -50px;
+  padding: 20px;
+  margin-inline: 80px;
+  color: var(--titleCol)
+}
+
+/* CARDS SECTION */
+.cards {
+  display: grid;
+  grid: auto auto auto /  350px 350px 350px;
+  grid-auto-flows: column;  
+  gap: 15px;
+  overflow: scroll;
+  max-height: 500px;
+  border-block: 5px solid var(--bgCol);
+  padding: 10px;
+  justify-items: center;
+
+}
+
+.card {
+  
+ /* height: 300px; 
+  max-height: 300px;
+  background-color: #fef5f4;  */
+  border: 1px groove var(--bgCol);
+  border-radius: 20px;
+  padding: 15px 20px;
+  cursor: pointer;;
+  
+  display: grid;
+  grid-template-rows: 0.8fr 50px;
+  grid-auto-flows: row;
+  gap: 5px;
+  position: relative;
+  transition: transform 300ms;
+}
+.card:hover {
+    transform: scale(0.9, 0.9);
+    border: 2px solid #4c91c6;
+}
+
+.subject {
+  font-size: clamp(0.5rem, 2.5vw, 2rem);
+}
+
+.subject .subcode {
+  font-size: 3rem;
+  color: var(--bgCol);
+}
+
+
+.sched {
+  background-color: var(--bgCol) ;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  
+}
+
+.sched .timeSched {
+  font-size: 20px;
+}
+
+
+
+@media (width < 700px) {
+  .cards {
+    grid: auto / 1fr;
+  }
+}

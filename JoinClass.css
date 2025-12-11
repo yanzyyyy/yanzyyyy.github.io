@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    background: #f8f8f8;
+    font-family: 'Archivo', sans-serif;
+    color: #333;
+
+.top-bar {
+    background: #0077cc;
+    color: #ffffff;
+    padding: 30px 40px;
+    padding-top: 1.1%;
+    padding-bottom: 1.2%;
+    border-radius: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    }
+
+.logo {
+    width: 130px;
+    height: 30px;
+    border-radius: 30%;
+}
+.logo span {
+    width: 130px;
+    height: 30px;
+    border-radius: 30%;
+}
+
+.top-center {
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 0.5%;
+    flex-grow: 1;
+    margin-left: 80px;
+    font-weight: bold;
+    margin-top: -2%;
+    margin-bottom: -1%;
+    font-size: 15px;
+}
+
+.date {
+    font-size: 15px;
+    color: #ffffff;
+    
+}
+
+.time {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -3px;
+    color: #ffffff;
+}
+
+.schedule {
+    font-size: 15px;
+    font-weight: bold;    
+    margin-top: -4px;
+    color: #ffffff;
+}
+
+.top-links a {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.content {
+    padding: 60px 80px;
+}
+
+.back-link {
+    color: #0077cc;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 2%;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #4C4C4C;
+    margin-left: 2%;
+}
+
+.subtitle {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 25px;
+    color: #4C4C4C;
+    margin-left: 2%;
+}
+
+.join-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 2%;
+}
+input {
+    padding: 10px 14px;
+    width: 180px;
+    border-radius: 30px;
+    border: 1px solid #0077cc;
+    outline: none;
+    font-size: 14px;
+}
+
+button {
+    background: #0077cc;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0077cc;
+    }
+}

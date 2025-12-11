@@ -1,0 +1,207 @@
+/* GLOBAL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
+}
+
+body {
+  background: #ffffff;
+  padding-bottom: 50px;
+}
+
+/* HEADER */
+.top-bar {
+  background: #0077cc;
+    color: #ffffff;
+    padding: 30px 40px;
+    padding-top: 1.1%;
+    padding-bottom: 1.2%;
+    border-radius: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+}
+
+.logo img {
+  width: 125px;
+}
+
+.top-center {
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 0.5%;
+    flex-grow: 1;
+    margin-left: 80px;
+    font-weight: bold;
+    margin-top: -2%;
+    margin-bottom: -1%;
+    font-size: 15px;
+}
+
+.top-center .date {
+  font-size: 0.9rem;
+}
+
+.top-center .time {
+  font-size: 1.4rem;
+  margin: 3px 0;
+  font-weight: bold;
+}
+
+.top-center .schedule {
+  font-size: 0.9rem;
+}
+
+.top-links a {
+  margin-left: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* BACK LINK */
+.content {
+  width: 88%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.back-link {
+  color: #0077cc;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: -1%;
+}
+
+/* STUDENT NAME */
+h1.name {
+  font-size: 3rem;
+  color: #8098ff;
+  font-weight: 700;
+  margin-left: 95px;
+  margin-top: 20px;
+  margin-bottom: 17px;
+}
+
+/* MAIN */
+main {
+  width: 90%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+main > p {
+  font-size: 1.5rem;
+  margin-left: 0;
+  margin-bottom: 15px;
+  color: #4C4C4C;
+}
+
+/* CARD SECTION */
+.cards {
+  display: flex;
+  gap: 40px;
+  justify-content: left;
+  padding: 30px 0;
+  border-top: 5px solid #8098ff;
+  border-bottom: 5px solid #8098ff;
+  margin-top: 10px;
+}
+
+/* INDIVIDUAL CARD */
+.card {
+  width: 370px;
+  min-height: 420px;
+  border: 2px solid #2b2eff;
+  padding: 22px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card:hover {
+    transform: scale(0.9, 0.9);
+    border: 2px solid #4c91c6;
+}
+
+/* SUBJECT TITLE */
+.subject {
+  font-size: 1.4rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.subject .subcode {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: -5px;
+  color: #55acff;
+}
+
+/* SCHEDULE BOX */
+.sched {
+  background: #2181cb;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+/* STATUS TAGS */
+.status {
+  background-color: #41C327;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.status.late {
+  background-color: #DB7944;
+}
+
+.status.absent {
+  background-color: #4C4C4C;
+}
+
+/* VIEW ALL BUTTON */
+.viewAll {
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+.viewAll a {
+  background: #2181cb;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 4px 2px blue;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.viewAll a:hover {
+  transform: translateY(-4px) scale(1.1);
+}
+
+/* MOBILE */
+@media (max-width: 1000px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

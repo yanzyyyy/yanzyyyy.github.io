@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Page title</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="specificLetter.css">
+</head>
+<body>    
+
+      <div class="top-bar">
+    <div class="logo">
+        <img src="atrac white.png" alt="ATRAC Logo" class="logo span" />
+    </div>
+
+    <div class="top-center">
+        <div class="date">November 30, 2025</div>
+        <div class="time">9:19 AM</div>
+        <div class="schedule">Nothing on your schedule today</div>
+    </div>
+
+   <div class="right-links">
+        <a href="ProfilePage.html">My Profile</a>
+        <a href="AttendanceTracker.html">Log-Out</a>
+    </div>
+</div>
+  <!-- END -->
+  <a href="ExcuseLetter.html" id="backBtn">« Go back</a> 
+  
+  <h1 class="name">Review Excuse Letter</h1>
+  
+  <main>
+    <div class="sender">
+        <p>From: <b>Dela Cruz, Juan</b></p>
+        <p>Block Section: <b>ICS-303A</b></p>
+    </div>
+
+    <div class="subject">
+        <p>Subject Code: <b>ITE212</b><br>
+        Excuse Letter for the Lecture Date: <b>November 7, 2025</b></p>
+    </div>
+
+    <div class="content">
+        <h3><b>Good day Ma’am Sir, </b></h3>
+        <br>
+        <p>I would like to have myself excused for our next lecture for tomorrow. I have a family emergency that needed to be taken care with. I appreciate your time reading this excuse letter.</p>
+    </div>
+
+    <div class="buttons">
+    <button class="approve" onclick="showSignupPopup()">Approve</button>
+    <button class="reject" onclick="showPopup()">Reject</button>
+</div>
+
+    <script>
+      function showSignupPopup() {
+      alert("Approved!");
+  }
+
+      function showPopup() {
+      alert("Rejected!");
+  }
+</script>
+
+    </div>
+  </main>
+</body>
+</html>

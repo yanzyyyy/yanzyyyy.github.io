@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Record</title>
+    <link rel="stylesheet" href="ClassRecord.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="topbar">
+            <div class="logo-area">
+                <img src="atrac white.png" alt="atrac" class="logo">
+            </div>
+
+            <div class="top-center">
+                <p class="date">November 30, 2025</p>
+                <p class="time">9:19 AM</p>
+                <p class="schedule">Nothing on your schedule today</p>
+            </div>
+
+            <nav class="nav-links">
+                <a href="ProfilePage.html" class="profile">My Profile</a>
+                <a href="AttendanceTracker.html" class="logout">Log-Out</a>
+            </nav>
+        </header>
+
+        <!-- CONTENT -->
+        <div class="content">
+            <a class="back-link" href="ViewClasses.html">&lt;&lt; Go back</a>
+
+            <h1 class="title">Your class</h1>
+
+            <div class="details">
+                <p class="label">Subject Name</p>
+                <h2 class="subject">Object-Oriented<br>Programming</h2>
+
+                <p class="label">Subject Code</p>
+                <h3 class="code">ITE210</h3>
+
+                <p class="label">Educator</p>
+                <h4 class="educator">Mr. Errol F. Diestro</h4>
+            </div>
+
+            <!-- RIGHT SIDE CARDS -->
+            <div class="stats">
+                <div class="stat-card">
+                    <p class="stat-label">Attended Classes</p>
+                    <p class="stat-num">9/10</p>
+                </div>
+
+                <div class="stat-card">
+                    <p class="stat-label">Missed Classes</p>
+                    <p class="stat-num">1/10</p>
+                </div>
+
+                <div class="stat-card">
+                    <p class="stat-label">Late Attendance</p>
+                    <p class="stat-num">0/10</p>
+                </div>
+
+                <a href="ViewRecordStudent.html">
+    <button class="small-btn">View my Records</button>
+</a>
+
+<button class="small-btn gray" onclick="openLeavePopup()">Leave this class</button>
+
+
+<div id="leaveOverlay" class="overlay hidden">
+    <div class="popup">
+        <h1>Are you sure you want to leave this class?</h1>
+        <p>This may be a mistake, but you can rejoin again.</p>
+
+        <div class="popup-buttons">
+            <button class="confirm" onclick="leaveClass()">Yes, leave</button>
+            <button class="cancel" onclick="closeLeavePopup()">I'll stay...</button>
+        </div>
+    </div>
+</div>
+
+<script>
+function openLeavePopup() {
+    document.getElementById('leaveOverlay').classList.remove('hidden');
+}
+
+function closeLeavePopup() {
+    document.getElementById('leaveOverlay').classList.add('hidden');
+}
+
+function leaveClass() {
+    closeLeavePopup(); 
+    window.location.href = "AttendanceTracker.html";
+}
+</script>
+
+</body>
+</html>

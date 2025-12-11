@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Page title</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="ManageClasses.css">
+</head>
+<body>    
+  <div class="top-bar">
+    <div class="logo">
+        <img src="atrac white.png" alt="ATRAC Logo" class="logo span" />
+    </div>
+
+    <div class="top-center">
+        <div class="date">November 30, 2025</div>
+        <div class="time">9:19 AM</div>
+        <div class="schedule">Nothing on your schedule today</div>
+    </div>
+
+   <div class="right-links">
+        <a href="ProfilePageEducator.html">My Profile</a>
+        <a href="AttendanceTracker.html">Log-Out</a>
+    </div>
+</div>
+  <!-- END -->
+  <a href="Educatormain.html" id="backBtn">« Go back</a> 
+  
+  <h1 class="name">Manage my Classes</h1>
+  
+  <main>
+    <div class="classSect">
+        <div class="subInfo">
+            <p style="font-size: small;">For:</p>
+            <p>Subject Code</p>
+            <p><b>Subject Name Long Subject Name :/</b></p>
+            <p style="font-size: small;">Room: Room No.</p>
+            <p>X:XX AM/PM - X:XX AM/PM (Day)</p>
+        </div>
+        <div class="block"><b>ICS-303A</b></div>
+    </div> 
+
+    <div class="stdList">
+        <h2>Students:</h2>
+        <p>Click on student name to view actions.</p>
+        <br>
+        <div class="std">
+            <p><b>Dela Cruz,</b> Juan </p>
+            <select name="attendance" id="attendance">
+                <option value="void">Select Attendance</option>
+                <hr>
+            </select>
+        </div>
+
+        <div class="std">
+            <p><b>Dela Cruz,</b> Juan </p>
+            <select name="attendance" id="attendance">
+                <option value="void">Select Attendance</option>
+                <hr>
+            </select>
+        </div>
+
+        <div class="std">
+            <p><b>Dela Cruz,</b> Juan </p>
+            <select name="attendance" id="attendance">
+                <option value="void">Select Attendance</option>
+                <hr>
+            </select>
+        </div>
+
+        <div class="std">
+            <p><b>Dela Cruz,</b> Juan </p>
+            <select name="attendance" id="attendance">
+                <option value="void">Select Attendance</option>
+                <hr>
+            </select>
+        </div>
+
+        <div class="std">
+            <p><b>Dela Cruz,</b> Juan </p>
+            <select name="attendance" id="attendance">
+                <option value="void">Select Attendance</option>
+                <hr>
+            </select>
+        </div>
+
+        <div class="std">
+            <p><b>Dela Cruz,</b> Juan </p>
+            <select name="attendance" id="attendance">
+                <option value="void">Select Attendance</option>
+                <hr>
+            </select>
+        </div>
+
+        <div class="std">
+            <p><b>Dela Cruz,</b> Juan </p>
+            <select name="attendance" id="attendance">
+                <option value="void">Select Attendance</option>
+                <hr>
+            </select>
+        </div>
+
+        <div class="std">
+            <p><b>Dela Cruz,</b> Juan </p>
+            <select name="attendance" id="attendance">
+                <option value="void">Select Attendance</option>
+                <hr>
+            </select>
+        </div>
+
+        <div class="std">
+            <p><b>Dela Cruz,</b> Juan </p>
+            <select name="attendance" id="attendance">
+                <option value="void">Select Attendance</option>
+                <hr>
+            </select>
+        </div>
+
+        <div class="std">
+            <p><b>Dela Cruz,</b> Juan </p>
+            <select name="attendance" id="attendance">
+                <option value="void">Select Attendance</option>
+                <hr>
+            </select>
+        </div>
+
+        <div class="std">
+            <p><b>Dela Cruz,</b> Juan </p>
+            <select name="attendance" id="attendance">
+                <option value="void">Select Attendance</option>
+                <hr>
+            </select>
+        </div>
+
+        <!-- save btn -->
+        <button class="saveBtn" onclick="showSignupPopup()">Save</button>
+
+        
+        <script>
+            function showSignupPopup() {
+            alert("Saved!");
+        }
+        </script>
+    </div> 
+<div class="bagongBtn" onclick="window.location ='Excel.html'">Import into Google Sheets</div>
+
+  </main>
+
+
+  <script>
+    let select = document.getElementsByTagName('select');
+    let arr = ["Present", "Late", "Absent"];
+    
+    for(let num=0; num<select.length; num++) {
+      for(let i=0; i < arr.length; i++) {
+        let option = document.createElement("OPTION"),
+            txt = document.createTextNode(arr[i]);
+        option.appendChild(txt);
+        select[num].insertBefore(option, select.lastChild);
+      }
+    }
+  </script>
+</body>
+</html>

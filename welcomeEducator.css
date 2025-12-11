@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 0 20px;
+  gap: 0px; 
+}
+
+.main-greeting {
+  font-size: 2rem;      
+  font-weight: 500;
+  margin: 0;
+}
+
+
+.atrac-blue {
+  color: #41C327; 
+  font-weight: 700;
+}
+
+
+.student-name {
+  font-size: 6rem;    
+  font-weight: 900;
+  color: #41C327;   
+  margin: 0;
+}
+
+.subtext {
+  font-size: 0.95rem;   
+  font-weight: 400;
+  color: #333;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  max-width: 3000px;      
+  line-height: 1.4;
+}
+
+.login-button {
+  display: inline-block;
+  padding: 11px 40px;    
+  font-size: 1.2rem;     
+  font-weight: 600;
+  background-color: #41C327;  
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #2e991d;  
+  transform: scale(1.05);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a class</title>
+    <link rel="stylesheet" href="CreateClass.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="logo">
+        <img src="atrac white.png" alt="atrac">
+    </div>
+
+    <div class="top-center">
+        <div class="date">November 30, 2025</div>
+        <div class="time">8:30 AM</div>
+        <div class="schedule">Nothing on your schedule today</div>
+    </div>
+
+    <div class="top-links">
+        <a href="ProfilePageEducator.html">My Profile</a>
+        <a href="AttendanceTracker.html">Log-out</a>
+    </div>
+</div>
+
+<div class="content">
+    <a class="back-link" href="Educatormain.html">&lt;&lt; Go back</a>
+    
+
+
+    <h1>Create a class</h1>
+    <div class="subtitle">Enter the details</div>
+
+    <div class="form-container">
+
+        <input type="text" placeholder="Subject Name">
+        <input type="text" placeholder="Subject Code">
+
+        <div class="schedule-box">
+            <input type="text" placeholder="Time Schedule">
+            <p class="small-text">Write the schedule in this format:<br>
+            (X:XX AM/PM - X:XX AM/PM)</p>
+        </div>
+
+        <input type="text" placeholder="Day">
+
+        <button class="signup-btn" onclick="showSignupPopup()">Sign-up</button>
+
+        <script>
+            function showSignupPopup() {
+            alert("Sign-up successful!");
+        }
+
+        </script>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+:root {
+    --bgCol: #41C327;
+    --titleCol: #4C4C4C;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
+}
+
+body {
+  display: grid;
+  grid: 1fr 10px 0.7fr 5fr / auto;
+  gap: 5px;
+  padding: 10px 20px;
+  
+  /*width: 1024px;*/
+ 
+}
+
+#backBtn {
+    color: var(--bgCol);
+    margin-left: 110px;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h1.name {
+  font-size: 48px;
+  color: var(--titleCol);
+  position: relative;
+  top: 20px;
+  margin-left: 100px; /* white top adjustment */
+}
+
+
+/* HEADER NI YANSON*/
+.top-bar {
+    background: #41C327;
+    color: #ffffff;
+    padding: 30px 40px;
+    padding-top: 1.1%;
+    padding-bottom: 1.2%;
+    border-radius: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    }
+
+.logo {
+    width: 130px;
+    height: 30px;
+    border-radius: 30%;
+}
+.logo span {
+    width: 130px;
+    height: 30px;
+    border-radius: 30%;
+}
+
+.top-center {
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 0.5%;
+    flex-grow: 1;
+    margin-left: 80px;
+    font-weight: bold;
+    margin-top: -2%;
+    margin-bottom: -1%;
+    font-size: 15px;
+}
+
+.top-center .date {
+  font-size: 0.9rem;
+}
+
+.top-center .time {
+  font-size: 1.4rem;
+  margin: 3px 0;
+  font-weight: bold;
+}
+
+.top-center .schedule {
+  font-size: 0.9rem;
+}
+.right-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+  display: grid;
+  grid-template-rows: 70px 1fr 1fr 40px;
+  grid-template-areas: 
+    'sender subject subject subject subject'
+    'content content content content content'
+    'content content content content content'
+    'buttons buttons buttons buttons buttons';
+  gap: 10px;
+  row-gap: 20px;
+  padding: 20px;
+  margin-inline: 80px;
+  color: var(--titleCol);
+  
+}
+
+.sender {
+    grid-area: sender;
+    background-color: var(--bgCol);
+    color: #ffffff;
+    align-content: center;
+    padding-left: 40px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.subject {
+    grid-area: subject;
+    align-content: center;
+    margin-left: 10px;
+}
+
+.content {
+    grid-area: content;
+    width: 70%;
+}
+
+.buttons {
+    grid-area: buttons;
+    display: flex;
+    gap: 10px;
+    margin-top: -20%;
+    margin-bottom: 20%;
+    
+
+}
+.approve {
+    background-color: var(--bgCol);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    padding-inline: 10px;
+    width: 130px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.reject {
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    padding-inline: 10px;
+    width: 130px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.reject:hover, .approve:hover {
+    border: 1px solid rgb(168, 112, 220);
+    
+}

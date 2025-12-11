@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.header {
+    background: #41c341;
+    color: #ffffff;
+    padding: 14px 40px;
+    border-radius: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px auto;
+    width: 90%;
+}
+
+.small-profile-pic {
+    width: 120px;
+    height: auto;
+}
+
+.center-time {
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 0.5%;
+    flex-grow: 1;
+    margin-left: 80px;
+    font-weight: bold;
+    margin-top: -2%;
+    margin-bottom: -1%;
+    font-size: 15px;
+}
+
+.center-time p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.center-time h3 {
+    margin: 3px 0;
+    font-size: 22px;
+}
+
+.center-time span {
+    font-size: 13px;
+}
+
+.right-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.profile-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    width: 60%;
+}
+
+.back {
+    font-weight: bold;
+    color: #41c341;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.details h2 {
+    font-size: 63px;
+    font-weight: bold;
+    color: #3d3d3d;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.label {
+    font-size: 22px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+.first-last-name {
+    font-size: 60px;
+    font-weight: bold;
+    color: #41c321;
+    margin-bottom: 25px;
+}
+
+.small-info {
+    font-size: 32px;
+    color: #41c321;
+    margin-bottom: 30px;
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.picture {
+    width: 50%;
+    text-align: center;
+}
+
+.picture img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: block;
+    margin: 0 auto;
+}
+
+.picture button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    background-color: #41c321;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

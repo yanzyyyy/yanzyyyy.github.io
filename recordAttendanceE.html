@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Record Attendance</title>
+
+  <!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="recordAttendanceE.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="top-bar">
+      <div class="logo">
+          <img src="atrac white.png" alt="ATRAC Logo" class="logo span" />
+      </div>
+
+      <div class="top-center">
+          <div class="date">November 30, 2025</div>
+          <div class="time">9:19 AM</div>
+          <div class="schedule">Nothing on your schedule today</div>
+      </div>
+
+      <div class="top-links">
+          <a href="ProfilePageEducator.html">My Profile</a>
+          <a href="AttendanceTracker.html">Log-Out</a>
+      </div>
+  </div>
+  <!-- END HEADER -->
+
+  <a href="Educatormain.html" id="backBtn">&lt;&lt; Go back</a>
+
+  <h1 class="name">Record Attendance</h1>
+
+  <main>
+      <p style="font-size: 1.5rem;">Select your class to record attendance</p>
+
+      <div class="cards">
+
+          <!-- Card 1 -->
+          <div class="card" onclick="window.location='ClassAttendance.html'">
+              <h3 class="subject">
+                  <p class="subcode">ITE212</p>
+                  Web System and Technologies
+              </h3>
+
+              <div class="sched">
+                  <p>Room E404</p>
+                  <span class="timeSched">7:30AM - 8:30AM (M)</span>
+              </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card" onclick="window.location='ClassAttendance.html'">
+              <h3 class="subject">
+                  <p class="subcode">ITE212L</p>
+                  Web System and Technologies
+              </h3>
+
+              <div class="sched">
+                  <p>Room E404</p>
+                  <span class="timeSched">7:30PM - 8:30PM (M)</span>
+              </div>
+          </div>
+
+      </div>
+  </main>
+
+</body>
+</html>
