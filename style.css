@@ -1,0 +1,72 @@
+body{
+    background-image: url("cinnamon.png");
+    margin:0;
+    padding:0;
+    background-size: cover;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.box{
+    padding: 40px 60px;
+    border-radius: 15px;
+    background: linear-gradient(
+    rgba(135, 206, 250, 0.6),
+    rgba(30, 144, 255, 0.6));
+    box-shadow: 0 0 20px ;
+    color: rgb(9, 23, 150);
+    text-align:center;
+    border: 2px solid rgba(3, 4, 78, 0.4);
+    height: 145px;
+}
+
+.box:hover {
+    transform: scale(1.2);
+}
+
+.cinna {
+    position: absolute;
+    margin-bottom: 25%;
+    margin-left: 40%;
+}
+
+.kurom {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 78%;
+}
+
+.romi {
+    position: absolute;
+    margin-top: 25%;
+    margin-right: 78%;
+}
+
+.btn{
+    padding: 15px 32px;
+    position: absolute;
+    top: 500px;
+    left: 46%;
+    border-radius: 60px;
+    color: rgb(8, 74, 173);
+    font-weight: bold;
+    font-size: medium;
+    background-color: rgb(181, 197, 240);
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Blow Candle</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+  body{
+    background:#c2723d;
+    text-align:center;
+    color:rgb(82, 40, 15);
+    font-family: "Great Vibes", cursive;
+    font-weight: 300;
+    font-size: larger;
+    padding: 4%;
+    padding-top:60px;
+  }
+  #flame{
+    width:45px;
+    height:90px;
+    background:yellow;
+    border-radius:50%;
+    box-shadow:0 0 20px yellow;
+    margin:0 auto;
+    position:relative;
+  }
+  #flame::after{
+    content:"";
+    width:30px;
+    height:65px;
+    background:red;
+    border-radius:50%;
+    position:absolute;
+    top: 12px;px; left:8px;
+  }
+  .candle{
+    width:25px;
+    height:350px;
+    padding: 1%;
+    background:white;
+    margin:0 auto;
+    border-radius:5px;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+<div id="flame"></div>
+<div class="candle"></div>
+
+
+<h1>Make a wish..</h1>
+<h1>and blow out the candle...</h1>
+
+
+<script>
+let flame = document.getElementById("flame");
+let blown = false;
+
+
+flame.onclick = () => blowOut();
+
+
+navigator.mediaDevices.getUserMedia({audio:true}).then(stream=>{
+  let audio = new AudioContext();
+  let mic = audio.createMediaStreamSource(stream);
+  let analyser = audio.createAnalyser();
+  mic.connect(analyser);
+  let data = new Uint8Array(128);
+
+  function checkBlow(){
+    if(blown) return;
+    analyser.getByteFrequencyData(data);
+    let volume = data.reduce((a,b)=>a+b) / data.length;
+
+    if(volume > 95){  
+      blowOut();
+    }
+    requestAnimationFrame(checkBlow);
+  }
+  checkBlow();
+});
+
+function blowOut(){
+  blown = true;
+  flame.style.display = "none";
+
+  let message = document.createElement("p");
+  message.textContent = "Hope all your birthday wishes come true! 🎉";
+  message.style.fontSize = "35px";
+  message.style.color = "brown";
+  message.style.textAlign = "center";
+  message.style.marginTop = "20px";
+
+  
+  document.body.appendChild(message);
+}
+</script>
+
+</body>
+</html>
